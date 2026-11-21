@@ -1,0 +1,45 @@
+# NC Math 3 tutor (Hermes edition) — single service, no ports, one volume.
+# Secrets live in .env (keep it owner-only), created from .env.example.
+name: ncmath3
+
+services:
+  ncmath3:
+    build:
+      context: .
+      dockerfile: Dockerfile.hermes
+    image: ncmath3:latest
+    container_name: ncmath3
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ncmath3-data:/opt/data   # profiles, memories, sessions, telegram pairing
+    environment:
+      HERMES_HOME: /opt/data
+      # Hermes desktop llama.cpp supervisor (live port/key via .env; refresh with
+      # python3 scripts/refresh_model_endpoint.py after a desktop restart)
+      NCMATH3_MODEL_URL: ${NCMATH3_MODEL_URL:-http://192.168.65.254:52215/v1}
+      NCMATH3_MODEL_KEY: ${NCMATH3_MODEL_KEY:-}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    deploy:
+      resources:
+        limits: {memory: 1G}
+    # no published ports: the gateway only dials out (api.telegram.org, model provider)
+
+  ui:                                           # parent progress dashboard (caduceus-ui pattern:
+    image: ncmath3:latest              #   loopback-only, no token, read-only data)
+    container_name: ncmath3-ui
+    restart: unless-stopped
+    entrypoint: ["python3", "/opt/ncmath3-bundle/ui/server.py"]  # web-only container: bypass the gateway appliance init
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    volumes:
+      - ncmath3-data:/data:ro                 # the UI can never write to the tutor's state
+    environment:
+      PROGRESS_FILE: /data/workspace/progress.jsonl
+    ports: ["127.0.0.1:8403:8403"]
+
+volumes:
+  ncmath3-data:
+    name: ncmath3-data

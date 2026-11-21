@@ -1,0 +1,27 @@
+# MathBuddy profile defaults. The installer may retune; updates preserve this file.
+# Local model on the Hermes desktop llama.cpp SUPERVISOR (same model the desk uses).
+# base_url/api_key are placeholders: the container hook re-renders them at every
+# boot from MATHBUDDY_MODEL_URL / MATHBUDDY_MODEL_KEY (the supervisor's port+key
+# rotate whenever the desktop app restarts). provider MUST be `custom` — Hermes's
+# `llamacpp` provider means its MANAGED runtime and refuses external base_urls.
+model:
+  default: Qwen3.8-Flash-Next-UD-IQ4_XS
+  provider: custom
+  base_url: http://192.168.65.254:52215/v1
+  api_key: ""
+  context_length: 262144
+
+agent:
+  max_turns: 20          # tutoring turns are short; cap runaway loops
+  tool_use_enforcement: off   # pure chat tutor: no tool coercion
+
+memory:
+  memory_enabled: true        # remembers his weak topics across sessions
+  user_profile_enabled: true
+
+gateway:
+  platforms:
+    telegram:
+      extra:
+        status_indicator: true   # bot profile shows Online/Offline
+        drop_pending_on_cold_boot: false  # answer homework asked while offline

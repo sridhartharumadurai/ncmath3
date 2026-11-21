@@ -1,0 +1,19 @@
+name: ncmath3
+version: 1.1.0
+description: "Socratic Telegram tutor for Open Up HS Math 3 (North Carolina) — 10 units, 78 lessons, hint ladder, progress memory"
+hermes_requires: ">=0.12.0"
+author: "stharumadurai"
+license: "MIT"
+env_requires:
+  - name: TELEGRAM_BOT_TOKEN
+    description: "Telegram bot token from @BotFather"
+    required: true
+  - name: TELEGRAM_ALLOWED_USERS
+    description: "Telegram user IDs allowed to chat (comma-separated) — keep it to you and your son"
+    required: true
+  - name: NCMATH3_MODEL_URL
+    description: "OpenAI-compatible endpoint of the local llama.cpp supervisor (default baked in)"
+    required: false
+  - name: NCMATH3_MODEL_KEY
+    description: "Supervisor key (rotates when the Hermes desktop app restarts)"
+    required: false

@@ -1,0 +1,24 @@
+# NC Math 3 tutor on the OFFICIAL Hermes appliance image (caduceus Dockerfile.hermes pattern):
+# s6-overlay supervises everything; the profile-gateways svscan + CMD wrapper come from
+# the base image. NEVER add an ENTRYPOINT override.
+#   docker build -f Dockerfile.hermes -t ncmath3 .
+FROM nousresearch/hermes-agent:latest
+
+# The distribution bundle is installed into a profile by the boot hook; it is
+# NOT the profile dir itself (the profile lives on the data volume). Build
+# context stays lean via .dockerignore.
+COPY --chmod=755 . /opt/ncmath3-bundle
+RUN rm -rf /opt/ncmath3-bundle/docker /opt/ncmath3-bundle/Dockerfile.hermes \
+        /opt/ncmath3-bundle/docker-compose.yml /opt/ncmath3-bundle/.env \
+        /opt/ncmath3-bundle/.env.example
+COPY --chmod=755 docker/ncmath3-cont-init.sh /etc/cont-init.d/05-ncmath3
+
+ENV HOME=/opt/data \
+    PATH=/opt/hermes/bin:$PATH
+
+# ONE host gateway per host (image-enforced multiplexing, verified 2026-11-20):
+# the default-profile host gateway is the inbound process for every profile,
+# and `profile use ncmath3` (hook above) routes Telegram into the tutor.
+# main-wrapper.sh runs this as the hermes user once services are up.
+# (No inbound ports: Telegram long-polling is outbound HTTPS only.)
+CMD ["hermes", "gateway", "run"]

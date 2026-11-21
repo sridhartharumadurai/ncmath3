@@ -1,0 +1,389 @@
+{
+  "course": "Open Up HS Math North Carolina \u2014 Math 3",
+  "source": "https://access.openupresources.org/curricula/our-hs-math-nc/en/nc/math-3/index.html",
+  "retrieved": "2026-11-20",
+  "units": [
+    {
+      "unit": 1,
+      "title": "Congruence, Structure, and Proof",
+      "lessonCount": 6,
+      "lessons": [
+        {
+          "id": "1.1",
+          "title": "Garden Transformations"
+        },
+        {
+          "id": "1.2",
+          "title": "You Say It\u2019s the Same"
+        },
+        {
+          "id": "1.3",
+          "title": "Viable, Valid, Verified"
+        },
+        {
+          "id": "1.4",
+          "title": "Parallelogram Conjectures and Proof"
+        },
+        {
+          "id": "1.5",
+          "title": "Guess My Parallelogram"
+        },
+        {
+          "id": "1.6",
+          "title": "Centers of a Triangle"
+        }
+      ]
+    },
+    {
+      "unit": 2,
+      "title": "Circles: A Geometric Perspective",
+      "lessonCount": 11,
+      "lessons": [
+        {
+          "id": "2.1",
+          "title": "Centered!"
+        },
+        {
+          "id": "2.2",
+          "title": "Circle Dilations"
+        },
+        {
+          "id": "2.3",
+          "title": "Cyclic Polygons"
+        },
+        {
+          "id": "2.4",
+          "title": "Circles Inside Out"
+        },
+        {
+          "id": "2.5",
+          "title": "Circular Reasoning"
+        },
+        {
+          "id": "2.6",
+          "title": "Pied!"
+        },
+        {
+          "id": "2.7",
+          "title": "Madison\u2019s Round Garden"
+        },
+        {
+          "id": "2.8",
+          "title": "Rays and Radians"
+        },
+        {
+          "id": "2.9",
+          "title": "Circling Triangles"
+        },
+        {
+          "id": "2.10",
+          "title": "Getting Centered"
+        },
+        {
+          "id": "2.11",
+          "title": "Circle Challenges"
+        }
+      ]
+    },
+    {
+      "unit": 3,
+      "title": "Modeling with Geometry",
+      "lessonCount": 6,
+      "lessons": [
+        {
+          "id": "3.1",
+          "title": "Sand Castles"
+        },
+        {
+          "id": "3.2",
+          "title": "Footprints in the Sand"
+        },
+        {
+          "id": "3.3",
+          "title": "Any Way You Slice It"
+        },
+        {
+          "id": "3.4",
+          "title": "Any Way You Spin It"
+        },
+        {
+          "id": "3.5",
+          "title": "Take Another Spin"
+        },
+        {
+          "id": "3.6",
+          "title": "You Nailed It!"
+        }
+      ]
+    },
+    {
+      "unit": 4,
+      "title": "Functions and their Inverses",
+      "lessonCount": 9,
+      "lessons": [
+        {
+          "id": "4.1",
+          "title": "Going to Pieces"
+        },
+        {
+          "id": "4.2",
+          "title": "Piece-Wiser"
+        },
+        {
+          "id": "4.3",
+          "title": "Absolutely Valuable"
+        },
+        {
+          "id": "4.4",
+          "title": "Absolutely Transformed"
+        },
+        {
+          "id": "4.5",
+          "title": "Brutus Bites Back"
+        },
+        {
+          "id": "4.6",
+          "title": "Flipping Ferraris"
+        },
+        {
+          "id": "4.7",
+          "title": "Tracking the Tortoise"
+        },
+        {
+          "id": "4.8",
+          "title": "Pulling a Rabbit Out of the Hat"
+        },
+        {
+          "id": "4.9",
+          "title": "Piece Out"
+        }
+      ]
+    },
+    {
+      "unit": 5,
+      "title": "Exponential and Logarithmic Functions",
+      "lessonCount": 5,
+      "lessons": [
+        {
+          "id": "5.1",
+          "title": "Log Logic"
+        },
+        {
+          "id": "5.2",
+          "title": "Log In, Log Out"
+        },
+        {
+          "id": "5.3",
+          "title": "Be the Lizard Wizard"
+        },
+        {
+          "id": "5.4",
+          "title": "Common Sense"
+        },
+        {
+          "id": "5.5",
+          "title": "Money Matters"
+        }
+      ]
+    },
+    {
+      "unit": 6,
+      "title": "Polynomial Functions",
+      "lessonCount": 8,
+      "lessons": [
+        {
+          "id": "6.1",
+          "title": "Scott\u2019s March Motivation"
+        },
+        {
+          "id": "6.2",
+          "title": "You-Mix Cubes"
+        },
+        {
+          "id": "6.3",
+          "title": "Pascal\u2019s Pride"
+        },
+        {
+          "id": "6.4",
+          "title": "Divide and Conquer"
+        },
+        {
+          "id": "6.5",
+          "title": "Building Strong Roots"
+        },
+        {
+          "id": "6.6",
+          "title": "Getting to the Root of the Problem"
+        },
+        {
+          "id": "6.7",
+          "title": "What\u2019s the End Game?"
+        },
+        {
+          "id": "6.8",
+          "title": "Puzzling Over Polynomials"
+        }
+      ]
+    },
+    {
+      "unit": 7,
+      "title": "Rational Functions and Expressions",
+      "lessonCount": 7,
+      "lessons": [
+        {
+          "id": "7.1",
+          "title": "Winner, Winner"
+        },
+        {
+          "id": "7.2",
+          "title": "Shift and Stretch"
+        },
+        {
+          "id": "7.3",
+          "title": "Rational Thinking"
+        },
+        {
+          "id": "7.4",
+          "title": "Are You Rational?"
+        },
+        {
+          "id": "7.5",
+          "title": "Just Act Rational"
+        },
+        {
+          "id": "7.6",
+          "title": "Sign on the Dotted Line"
+        },
+        {
+          "id": "7.7",
+          "title": "We All Scream for Ice Cream"
+        }
+      ]
+    },
+    {
+      "unit": 8,
+      "title": "Modeling Periodic Behavior",
+      "lessonCount": 9,
+      "lessons": [
+        {
+          "id": "8.1",
+          "title": "George W. Ferris\u2019 Day Off"
+        },
+        {
+          "id": "8.2",
+          "title": "\u201cSine\u201d Language"
+        },
+        {
+          "id": "8.3",
+          "title": "More \u201cSine\u201d Language"
+        },
+        {
+          "id": "8.4",
+          "title": "More Ferris Wheels"
+        },
+        {
+          "id": "8.5",
+          "title": "Moving Shadows"
+        },
+        {
+          "id": "8.6",
+          "title": "Diggin\u2019 It"
+        },
+        {
+          "id": "8.7",
+          "title": "Staking It"
+        },
+        {
+          "id": "8.8",
+          "title": "\u201cSine\u201ding and \u201cCosine\u201ding It"
+        },
+        {
+          "id": "8.9",
+          "title": "Water Wheels and the Unit Circle"
+        }
+      ]
+    },
+    {
+      "unit": 9,
+      "title": "Modeling with Functions",
+      "lessonCount": 6,
+      "lessons": [
+        {
+          "id": "9.1",
+          "title": "Function Family Reunion"
+        },
+        {
+          "id": "9.2",
+          "title": "You Are the Imagineer"
+        },
+        {
+          "id": "9.3",
+          "title": "The Bungee Jump Simulator"
+        },
+        {
+          "id": "9.4",
+          "title": "Composing and Decomposing"
+        },
+        {
+          "id": "9.5",
+          "title": "Translating My Composition"
+        },
+        {
+          "id": "9.6",
+          "title": "Different Combinations"
+        }
+      ]
+    },
+    {
+      "unit": 10,
+      "title": "Statistics",
+      "lessonCount": 11,
+      "lessons": [
+        {
+          "id": "10.1",
+          "title": "What Is Normal?"
+        },
+        {
+          "id": "10.2",
+          "title": "Just ACT Normal"
+        },
+        {
+          "id": "10.3",
+          "title": "Y B Normal?"
+        },
+        {
+          "id": "10.4",
+          "title": "Wow, That\u2019s Weird!"
+        },
+        {
+          "id": "10.5",
+          "title": "Would You Like to Try a Sample?"
+        },
+        {
+          "id": "10.6",
+          "title": "Let\u2019s Investigate"
+        },
+        {
+          "id": "10.7",
+          "title": "Ancient Treasures"
+        },
+        {
+          "id": "10.8",
+          "title": "Sim City"
+        },
+        {
+          "id": "10.9",
+          "title": "Meaningful Possibilities"
+        },
+        {
+          "id": "10.10",
+          "title": "Music to My Ears"
+        },
+        {
+          "id": "10.11",
+          "title": "So, You Say There\u2019s a Chance?"
+        }
+      ]
+    }
+  ]
+}
